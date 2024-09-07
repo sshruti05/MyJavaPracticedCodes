@@ -8,7 +8,7 @@ public class TransposeArray {
                 { 3, 3, 3, 3 } };
 		int row = 0;
 		int col = 0;
-		for(int[] row:A.length)
+//		for(int[] row:A.length)
 
 	}
 

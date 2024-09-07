@@ -1,26 +1,22 @@
 package string.withoutinbuiltfunction;
 
-import java.util.Scanner;
-
 public class ReverseString1 {
-	
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		String inputString = sc.nextLine();
+	private static String reverseString(String str) {
+		char[] c = str.toCharArray();
+		char temp;
+		for( int i=0,j=c.length-1; i<(c.length/2); i++,j-- ) {
+			temp = c[i];
+			c[i] = c[j];
+			c[j] = temp;
+		}		
+		return new String(c);
+	}	
+	public static void main(String[] args) {		
+		String inputString = "Sneha Shruti";
 		
 		System.out.println("Original String: "+inputString);
 		System.out.println("Reversed String: "+reverseString(inputString));
 	}
-	
-	private static String reverseString(String s) {
-		char[] ar = s.toCharArray();	
-		char temp;
-		for (int i=0, j=ar.length-1; i<(ar.length)/2; i++, j--) {
-			temp = ar[i];
-			ar[i] = ar[j];
-			ar[j] = temp;
-		}
-		return new String(ar);	
-	}
-}
+}	/*Original String: Sneha Shruti
+      Reversed String: iturhS ahenS  */
+

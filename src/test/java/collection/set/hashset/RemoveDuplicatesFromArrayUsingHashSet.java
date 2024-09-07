@@ -17,5 +17,6 @@ public class RemoveDuplicatesFromArrayUsingHashSet {
 			System.out.print(i+" ");
 		
 		System.out.println("\n"+Arrays.toString(num));
+		
 	}
 }

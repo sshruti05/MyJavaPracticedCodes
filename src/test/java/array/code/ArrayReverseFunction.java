@@ -5,7 +5,7 @@ public class ArrayReverseFunction {
 		int[] ae = {1,2,3,4,5};
 		int a;
 		reverseArray(ae);
-		printReversedArray(a);
+//		printReversedArray(a);
 		
 	}
 	private static void reverseArray(int[] arr) {

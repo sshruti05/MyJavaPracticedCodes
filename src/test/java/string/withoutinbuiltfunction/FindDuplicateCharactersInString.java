@@ -12,8 +12,7 @@ public class FindDuplicateCharactersInString {
 		Map<Character, Integer> m = new HashMap<>();
 		
 		for ( Character c: s.toLowerCase().toCharArray()) {
-			if(c != ' ') {
-							
+			if(c != ' ') {							
 				if(m.containsKey(c))
 					m.put(c, m.get(c)+1);
 				else

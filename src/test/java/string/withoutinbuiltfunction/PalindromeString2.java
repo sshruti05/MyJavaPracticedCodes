@@ -1,10 +1,9 @@
 package string.withoutinbuiltfunction;
 
-public class PalindromeString {
+public class PalindromeString2 {
 
 	public static void main(String[] args) {
-		
-		String s = "WaW";
+		String s = "Madam";
 		char[] c = s.toCharArray();
 		String reversedString = "";
 		
@@ -12,11 +11,10 @@ public class PalindromeString {
 			reversedString = reversedString+c[i];
 		}
 		
-		if(s.equals(reversedString)) {
-			System.out.println("This is a palindrome.");
+		if(s.equalsIgnoreCase(reversedString)) {
+			System.out.println(s+" is a palindrome. "+reversedString);
 		}else {
-			System.out.println("Its not palindrome.");
+			System.out.println(s+" is not a palindrome. "+reversedString);
 		}
 	}
-
 }

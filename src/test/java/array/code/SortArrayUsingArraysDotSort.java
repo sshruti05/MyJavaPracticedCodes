@@ -2,10 +2,10 @@ package array.code;
 
 import java.util.Arrays;
 
-public class SortArray {
+public class SortArrayUsingArraysDotSort {
 
 	public static void main(String[] args) {
-		int[] arr = new int[] {1, 3, 7,-8, -3};
+		Integer[] arr = new Integer[] {1, 3, 7,-8, -3};
 		Arrays.sort(arr);
 		System.out.println(arr);
 		System.out.println(Arrays.toString(arr));
