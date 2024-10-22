@@ -1,4 +1,4 @@
-package interview.map;
+package map.hashmap;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -43,7 +43,8 @@ public class HashMapClass {
 			}
 		}
 		System.out.println(map);	//{Jais=35, Pri=34, Sneh=32, Shuru=31}	
-		Map m1 = Collections.synchronizedMap(map);
+		Map<String, Integer> m1 = Collections.synchronizedMap(map);
+		
 	}
 
 }

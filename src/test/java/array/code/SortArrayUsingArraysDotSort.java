@@ -19,7 +19,6 @@ public class SortArrayUsingArraysDotSort {
 		System.out.println("Array before sorting: ");
 		for(int i : b)
 			System.out.print(i+" ");
-		
 		Arrays.sort(b);
 		
 		System.out.println("\nArray after sorting: ");
