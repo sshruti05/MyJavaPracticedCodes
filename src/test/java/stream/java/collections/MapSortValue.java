@@ -14,8 +14,8 @@ public class MapSortValue {
 		m.put("Priyanka", 32);
 		m.put("Sneha", 31);
 		
-		Collections.sort(new ArrayList(m.values()),(e1,e2)->e1.values().compareTo(e2.values));
-//		System.out.println(m.values().stream().(Collectors.toCollection(ArrayList::new)));
+//		Collections.sort(new ArrayList(m.values()), (Object e1, Object e2) ->e1.values().compareTo(e2.values));
+////		System.out.println(m.values().stream().(Collectors.toCollection(ArrayList::new)));
 		
 
 	}
