@@ -1,19 +1,17 @@
 package number.scenarios;
 
 public class FibonacciSeries {
-
 	public static void main(String[] args) {
-		
 		int a = 0;
 		int b = 1;
-		int numOfIterations = 1;
-		int tem;
+		int numOfIterations = 9;
+		int temp;
 		System.out.print(a+" "+b+" ");
 		for(int i = 2; i < numOfIterations; i++) {
-			tem = a+b;
-			System.out.print(tem+" ");
+			temp = a+b;
+			System.out.print(temp+" ");
 			a=b;
-			b=tem;	
+			b=temp;
 		}
 	}
 }
