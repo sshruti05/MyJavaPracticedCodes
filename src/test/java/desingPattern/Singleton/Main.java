@@ -8,10 +8,12 @@ public class Main {
 		Thread t1 = new Thread(task);
 		Thread t2 = new Thread(task);
 		Thread t3 = new Thread(task);
-		
 		t1.start();
 		t2.start();
 		t3.start();
+		System.out.println(t1.toString());
+		System.out.println(t2.toString());
+		System.out.println(t3.toString());
 
 //		============================================
 //		Browser b1 = Browser.getInstance();
