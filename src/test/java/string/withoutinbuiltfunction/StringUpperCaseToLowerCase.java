@@ -34,7 +34,7 @@ a=97 to z=122
     public static String toLowerCase(String s){
         StringBuilder sb = new StringBuilder();
         for(char c: s.toCharArray()) {
-            if (c >= 65 && c <= 90) {
+            if (c >= 'A' && c <= 'Z') {
                 c += 32;
             }
             sb.append(c);

@@ -4,8 +4,12 @@ public class ReplaceVowelByX {
     public static void main(String[] args) {
         String input = "india-INDIAN";
 //        Method1:
-//        String result = input.replaceAll("[aeiouAEIOU]", "X");
-//        System.out.println(result); //XndXX-XNDXXN
+        String result = input.replaceAll("[aeiouAEIOU]", "X");
+        String result1 = input.replaceAll("[aeiouAEIOU]", "");
+
+        System.out.println(result); //XndXX-XNDXXN
+          System.out.println(result1); //nd-NDN
+
 
 //        Method2:
         StringBuilder sb = new StringBuilder();

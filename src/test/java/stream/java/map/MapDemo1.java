@@ -10,6 +10,7 @@ public class MapDemo1 {
 //      or
         List<String> newList1 = lists.stream().map(String::toUpperCase).collect(Collectors.toList());
         System.out.println(newList);
+        new Object();
     }
 }
 /*

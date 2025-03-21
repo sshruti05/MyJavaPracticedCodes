@@ -32,5 +32,8 @@ public class ArrayListObjectSorting {
 		
 		Collections.sort(l, (e1, e2)-> (e1.age<e2.age)? 1: (e1.age>e2.age)?-1:0);
 		System.out.println(l);
+
+		Collections.sort(l, (e1, e2)-> (e1.age<e2.age)? -1: (e1.age>e2.age)?1:0);
+		System.out.println(l);
 	}
 }

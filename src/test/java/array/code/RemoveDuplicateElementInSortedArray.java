@@ -10,7 +10,7 @@ public class RemoveDuplicateElementInSortedArray {
 		System.out.println("Method1: Using temp array*************************");
 		int[] num = {1,2,2,3,4,5,5,5};
 		
-		int[] temp = new int[num.length];
+		int[] temp = new int[0];// = new int[num.length];
 		int j=0;
 		for(int i=0; i<num.length-1; i++) {
 			if(num[i] != num[i+1]) {
@@ -49,9 +49,9 @@ public class RemoveDuplicateElementInSortedArray {
 		
 //		============================================================
 		System.out.println("\nMethod4: Using Java8 Stream*************************");
-		int[] nums1 = {1,3,4,4,6,6,6,2,2,7,8,8,8,9};
+		int[] nums1 = {1,3,4,4,2,1,6,10,6,6,23,2,7,8,8,8,9};
 
-		Arrays.stream(nums1).sorted().distinct().forEach(s-> System.out.print(s+" "));
+		Arrays.stream(nums1).distinct().forEach(s-> System.out.print(s+" "));
 //		.forEach(System.out::print);
 	}
 }

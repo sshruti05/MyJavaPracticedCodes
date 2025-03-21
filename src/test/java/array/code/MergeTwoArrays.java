@@ -16,8 +16,8 @@ public class MergeTwoArrays {
 //			c[clen] = b[j];
 //			clen++;
 		}
-		for(int c1:c)
-			System.out.print(c1+" ");
+//		for(int c1:c)
+//			System.out.print(c1+" ");
 		
 		System.out.println("\n"+Arrays.toString(c));
 	}

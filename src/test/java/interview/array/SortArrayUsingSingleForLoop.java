@@ -12,8 +12,7 @@ public class SortArrayUsingSingleForLoop {
 				int temp = arr[i];
 				arr[i] = arr[i+1];
 				arr[i+1] = temp;
-				i = -1;	
-				System.out.println(Arrays.toString(arr));
+				i = -1;
 			}
 		}
 		System.out.println(Arrays.toString(arr));

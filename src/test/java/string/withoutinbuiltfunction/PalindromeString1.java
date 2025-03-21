@@ -1,9 +1,7 @@
 package string.withoutinbuiltfunction;
 
 public class PalindromeString1 {
-
 	public static void main(String[] args) {
-		
 		String s = "WajaW";
 		char[] c = s.toCharArray();
 

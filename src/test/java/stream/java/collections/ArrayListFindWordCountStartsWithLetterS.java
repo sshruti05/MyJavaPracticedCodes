@@ -42,16 +42,16 @@ public class ArrayListFindWordCountStartsWithLetterS {
 		al.add("Seema");
 		al.add("Amar");
 		
-		long count = al.stream().filter(s -> s.toLowerCase().startsWith("s")).count();	
-		System.out.println(count);
+//		long count = al.stream().filter(s -> s.toLowerCase().startsWith("s")).count();
+//		System.out.println(count);
 //		We can also create streams without creating collections, array or any other data 
 		
-		long c = Stream.of("Shruti", "Priyanka","sneha", "Sonu", "Shinu", "Seema", "Amar").
-		filter(s-> s.toLowerCase().startsWith("s")).count();
-		System.out.println(c);
-		
-		Stream.of("Shruti", "Priyanka","sneha", "Sonu", "Shinu", "Seema", "Amar").
-		filter(s-> s.length()>4).forEach(System.out::println);
+//		long c = Stream.of("Shruti", "Priyanka","sneha", "Sonu", "Shinu", "Seema", "Amar").
+//		filter(s-> s.toLowerCase().startsWith("s")).count();
+//		System.out.println(c);
+//
+//		Stream.of("Shruti", "Priyanka","sneha", "Sonu", "Shinu", "Seema", "Amar").
+//		filter(s-> s.length()>4).forEach(System.out::println);
 		
 		Stream.of("Shruti", "Priyanka","sneha", "Sonu", "Shinu", "Seema", "Amar").
 		filter(s-> s.endsWith("a")).map(s-> s.toUpperCase()).forEach(System.out::println);	

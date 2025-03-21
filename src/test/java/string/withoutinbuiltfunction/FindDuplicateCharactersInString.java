@@ -6,8 +6,6 @@ import java.util.Map;
 public class FindDuplicateCharactersInString {
 	
 	public static void main(String[] args) {
-		
-	
 		String s = "snehash hhaaa sdsjd";		
 		Map<Character, Integer> m = new HashMap<>();
 		

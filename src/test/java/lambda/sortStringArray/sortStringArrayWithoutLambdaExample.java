@@ -1,6 +1,7 @@
 package lambda.sortStringArray;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 
 public class sortStringArrayWithoutLambdaExample {
@@ -15,6 +16,7 @@ public class sortStringArrayWithoutLambdaExample {
         }
 
         Arrays.sort(str, new SortString());
+//Arrays.sort(str, (o1,o2)-> o1.compareTo(o2));
 
         for(String s: str){
             System.out.print(s+" ");

@@ -16,8 +16,9 @@ public class stringBuffer {
 //        System.out.println(s.concat("shruti"));
 //        System.out.println(s);
         StringBuffer sb1 = new StringBuffer("Hello");
-        System.out.println(sb==sb1);
-        System.out.println(sb.toString().equals(sb1.toString()));
+        System.out.println(sb==sb1); //false
+        System.out.println(sb.equals(sb1)); //false
+        System.out.println(sb.toString().equals(sb1.toString())); //true
 
 
     }
