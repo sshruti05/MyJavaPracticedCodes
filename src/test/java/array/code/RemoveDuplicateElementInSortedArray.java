@@ -10,15 +10,16 @@ public class RemoveDuplicateElementInSortedArray {
 		System.out.println("Method1: Using temp array*************************");
 		int[] num = {1,2,2,3,4,5,5,5};
 		
-		int[] temp = new int[0];// = new int[num.length];
-		int j=0;
-		for(int i=0; i<num.length-1; i++) {
-			if(num[i] != num[i+1]) {
-				temp[j]=num[i];
-				j++;
-			}
-		}temp[j] = num[num.length-1];
-		System.out.print(Arrays.toString(temp)); //[1, 2, 3, 4, 5, 0, 0, 0]
+//		int[] temp = new int[0];// = new int[num.length];
+//		int j=0;
+//		for(int i=0; i<num.length-1; i++) {
+//			if(num[i] != num[i+1]) {
+//				temp[j]=num[i];
+//				j++;
+//			}
+//		}
+//		temp[j] = num[num.length-1];
+//		System.out.print(Arrays.toString(temp)); //[1, 2, 3, 4, 5, 0, 0, 0]
 //=============================================================================		
 		System.out.println("\nMethod2: using same array*************************");
 		int[] num1 = {1,2,2,3,4,4,6,6,6,8};

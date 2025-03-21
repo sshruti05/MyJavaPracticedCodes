@@ -1,6 +1,7 @@
 package collection.comparator;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -35,8 +36,8 @@ public class SortClassTypeInList {
         l.add(new Person(78, "pri"));
         l.add(new Person(33, "ananaya"));
 
-//        Collections.sort(l);
-
+        Collections.sort(l, Comparator.comparingInt(Person::getAge).reversed());
+        System.out.println(l);
     }
 
 
