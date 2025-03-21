@@ -17,6 +17,7 @@ public class FindTargetNumber {
             }
         }
 //        Method2:
+        System.out.println("**********Method2**************");
         Map<Integer, Integer> map = new HashMap<>();
         for(int i=0; i<nums.length; i++){ //{2,4,8,3,1,7,1,11,15}
             int diff = target-nums[i];

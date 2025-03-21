@@ -24,17 +24,24 @@ public class ArraysSortPractice {
         }
         System.out.println("\n*********Method3***********");
         String[] strs = {"asd", "zdfs", "dsgd"};
-        Arrays.sort(strs, new MyComparator());
+//        Arrays.sort(strs, new MyComparator());
+        Arrays.sort(strs, (o1,o2)-> o2.compareTo(o1));
         for(String str: strs){
             System.out.print(str+" "); //zdfs dsgd asd
         }
     }
 }
-class MyComparator implements Comparator<String>{
-    @Override
-    public int compare(String o1, String o2) {
-//        return o1.compareTo(o2); // natural order: asd dsgd zdfs
-        return o2.compareTo(o1); // reverse order : zdfs dsgd asd
-    }
+class MyComparator implements Comparator<Object>{
+//    @Override
+//    public int compare(String o1, String o2) {
+////        return o1.compareTo(o2); // natural order: asd dsgd zdfs
+//        return o2.compareTo(o1); // reverse order : zdfs dsgd asd
+//    }
 
+    @Override
+    public int compare(Object o1, Object o2) {
+        String s1 = o1.toString();
+        String s2 = o2.toString();
+        return s2.compareTo(s1);
+    }
 }
