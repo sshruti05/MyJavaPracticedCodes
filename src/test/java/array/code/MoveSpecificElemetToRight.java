@@ -1,3 +1,8 @@
+package array.code;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class MoveSpecificElemetToRight {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 1, 0, 2, 1, 3, 2, 1};
