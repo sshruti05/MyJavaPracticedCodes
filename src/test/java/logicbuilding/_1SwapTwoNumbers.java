@@ -1,6 +1,6 @@
-package number.scenarios;
+package logicbuilding;
 
-public class SwapTwoNumbers {
+public class _1SwapTwoNumbers {
 	public static void main(String[] args) {
 //		Method1: 
 		int a = 10, b = 20;		
