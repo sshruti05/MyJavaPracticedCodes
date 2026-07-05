@@ -7,8 +7,8 @@ public class IdentityHashMapClass {
 
 	public static void main(String[] args) {
 		HashMap<Integer, String> hm = new HashMap();
-		Integer i1 = new Integer(10);
-		Integer i2 = new Integer(10);
+		Integer i1 = Integer.valueOf(10);
+		Integer i2 = Integer.valueOf(10);
 		hm.put(i1, "Sneha");
 		hm.put(i2,"Shruti");
 		System.out.println(hm); // {10=Shruti}
